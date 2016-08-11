@@ -120,13 +120,13 @@ public class ShareDialog {
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
         lp.gravity = Gravity.BOTTOM | Gravity.LEFT;
         customDialog.getWindow().setAttributes(lp);
-        LinearLayout Share_QQ, Share_wechat, Share_sina, Share_friend_circle, share_qq_space;
+        LinearLayout share_qq, share_wechat, share_sina, share_friend_circle, share_qq_space;
         TextView cancleButton;
-        Share_QQ = (LinearLayout) dialogView.findViewById(R.id.share_QQ);
-        Share_wechat = (LinearLayout) dialogView.findViewById(R.id.share_wechat);
-        Share_sina = (LinearLayout) dialogView.findViewById(R.id.share_sina);
+        share_qq = (LinearLayout) dialogView.findViewById(R.id.share_QQ);
+        share_wechat = (LinearLayout) dialogView.findViewById(R.id.share_wechat);
+        share_sina = (LinearLayout) dialogView.findViewById(R.id.share_sina);
         cancleButton = (TextView) dialogView.findViewById(R.id.cancle);
-        Share_friend_circle = (LinearLayout) dialogView.findViewById(R.id.share_friend_cicle);
+        share_friend_circle = (LinearLayout) dialogView.findViewById(R.id.share_friend_cicle);
         share_qq_space = (LinearLayout) dialogView.findViewById(R.id.share_qq_space);
 
         share_qq_space.setOnClickListener(new View.OnClickListener() {
@@ -137,7 +137,7 @@ public class ShareDialog {
             }
         });
 
-        Share_QQ.setOnClickListener(new View.OnClickListener() {
+        share_qq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 chekoutIsApkInstalled(QQ_PACKAGE_NAME, SHARE_MEDIA.QQ);
@@ -145,7 +145,7 @@ public class ShareDialog {
                 customDialog.cancel();
             }
         });
-        Share_wechat.setOnClickListener(new View.OnClickListener() {
+        share_wechat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 chekoutIsApkInstalled(WX_PACKAGE_NAME, SHARE_MEDIA.WEIXIN);
@@ -153,7 +153,7 @@ public class ShareDialog {
             }
         });
 
-        Share_sina.setOnClickListener(new View.OnClickListener() {
+        share_sina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                chekoutIsApkInstalled("com.sina.weibo", SHARE_MEDIA.SINA);
@@ -162,7 +162,7 @@ public class ShareDialog {
             }
         });
 
-        Share_friend_circle.setOnClickListener(new View.OnClickListener() {
+        share_friend_circle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 chekoutIsApkInstalled(WX_PACKAGE_NAME, SHARE_MEDIA.WEIXIN_CIRCLE);
