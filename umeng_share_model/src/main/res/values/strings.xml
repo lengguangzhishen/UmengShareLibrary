@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UmengShareModel</string>
+    <string name="qq_package_name">com.tencent.mobileqq</string>
+    <string name="wx_package_name">com.tencent.mm</string>
+    <string name="sina_package_name">com.sina.weibo</string>
+    <string name="qq_not_installed">QQ客户端未安装</string>
+    <string name="wx_not_installed">微信客户端未安装</string>
+    <string name="share_successed">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_cancel">分享取消</string>
+</resources>
